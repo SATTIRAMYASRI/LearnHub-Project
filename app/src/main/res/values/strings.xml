@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single source of truth for every user-visible string. -->
+<resources>
+    <string name="app_name">LearnHub</string>
+
+    <!-- Common -->
+    <string name="action_retry">Retry</string>
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_no_connection">No internet connection.</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome back</string>
+    <string name="login_subtitle">Sign in to continue learning</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_demo_hint">Demo account: demo@learnhub.com / Learn@123</string>
+    <string name="login_button">Login</string>
+    <string name="login_error_email_required">Email is required</string>
+    <string name="login_error_email_invalid">Enter a valid email address</string>
+    <string name="login_error_password_required">Password is required</string>
+    <string name="login_error_invalid_credentials">Invalid email or password</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">My Courses</string>
+    <string name="dashboard_empty">No courses available yet.</string>
+    <string name="dashboard_error_load">Couldn\'t load courses.</string>
+    <string name="dashboard_showing_cached">Showing saved courses. Couldn\'t refresh.</string>
+    <string name="course_instructor">By %1$s</string>
+    <plurals name="course_lessons_count">
+        <item quantity="one">%1$d lesson</item>
+        <item quantity="other">%1$d lessons</item>
+    </plurals>
+    <string name="course_progress_percent">%1$d%%</string>
+    <string name="course_continue">Continue</string>
+
+    <!-- Course details -->
+    <string name="details_title">Course Details</string>
+    <string name="details_lessons_header">Lessons</string>
+    <string name="details_not_found">Course not found.</string>
+    <string name="lesson_status_completed">Completed</string>
+    <string name="lesson_status_pending">Pending</string>
+    <string name="lesson_mark_completed">Mark as completed</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_back">Back</string>
+    <string name="cd_course_icon">Course</string>
+    <string name="cd_lesson_completed">Lesson completed</string>
+    <string name="cd_lesson_pending">Lesson pending</string>
+</resources>

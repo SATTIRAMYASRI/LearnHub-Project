@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ramya.learnhub.ui.login.LoginFragment">
+        <action
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.ramya.learnhub.ui.dashboard.DashboardFragment">
+        <action
+            android:id="@+id/action_dashboard_to_details"
+            app:destination="@id/courseDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/courseDetailsFragment"
+        android:name="com.ramya.learnhub.ui.details.CourseDetailsFragment">
+        <argument
+            android:name="courseId"
+            app:argType="long" />
+    </fragment>
+</navigation>
